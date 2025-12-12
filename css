@@ -1,0 +1,108 @@
+/* ---------------------- */
+/*       HERO (TOPO)      */
+/* ---------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* NUNCA mais rolar pro lado */
+}
+
+body {
+    margin: 0;  /* isso tira a margem branca padrão do navegador */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* HEADER / TOPO */
+
+.topo {
+    position: absolute; /* SOBRE o hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+    background: transparent; /* remove o roxo sólido */
+    color: #F9FAFB;
+}
+
+
+.hero {
+    min-height: auto; 
+    padding: 80px 80px 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: radial-gradient(circle at top left, #4b1182 0%, #491542 40%, #2E1065 100%);
+    color: #F9FAFB;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 16px;
+    margin: 0
+}
+
+.cursos{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 40px;
+}
+
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas que se adaptam */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card-curso {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 28px;
+    padding: 32px;
+    min-height: 260px;
+    color: #fff;
+}
+
+.card-curso h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-curso p {
+    margin: 0 0 16px;
+    line-height: light;
+    font-size: 16px;
+}
+
+.card-curso a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: auto;
+}
+
+.btn-curso{
+    margin-top: auto;
+    display: inline-block;
+    background: #ff6d38;
+padding: 12px 24px;
+border-radius: 12px;
+font-weight: 600;
+}
+
+.logo {
+    height: 40px;
+    object-fit: contain;
+}
